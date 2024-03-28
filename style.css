@@ -1,5 +1,6 @@
 body {
   padding: 1%;
+  box-sizing: border-box;
 }
 /*NAVBAR*/
 
@@ -12,17 +13,17 @@ body {
 }
 
 .navbar p:nth-of-type(1) {
-  background-color: #f3df85;
+  /* background-color: #f3df85;
   color: #612406;
   border-radius: 30px;
-  padding: 10px;
+  padding: 100px; */
 }
 
 .navbar p:nth-of-type(2) {
-  background-color: #f3df85;
+  /* background-color: #f3df85;
   color: #612406;
   border-radius: 30px;
-  padding: 10px;
+  padding: 100px; */
 }
 
 .shopdiv {
@@ -46,57 +47,65 @@ body {
 }
 
 .navbar p:nth-of-type(3) {
-  background-color: #f3df85;
+  /* background-color: #f3df85;
   color: #612406;
   border-radius: 30px;
-  padding: 10px;
+  padding: 10px; */
 }
 
 .navbar p:nth-of-type(4) {
-  background-color: #f3df85;
+  /* background-color: #f3df85;
   color: #612406;
   border-radius: 30px;
-  padding: 10px;
+  padding: 10px; */
 }
 @media screen and (max-width: 575px) {
   .navbar {
-    background-color: #000000;
+    background-color: #fbf7e3;
     border-radius: 150px;
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
     margin-left: auto;
     margin-right: auto;
     height: 500px;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
   }
-
+  .header-card {
+    /*display: block;
+    justify-content: space-around;
+    flex-direction: row;
+  */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    height: 200px;
+    text-align: center;
+  }
+  .p-card {
+    padding: 30px;
+  }
   .navbar p:nth-of-type(1) {
-    background-color: #f3df85;
+    /* background-color: #f3df85;
     color: #612406;
     border-radius: 30px;
     padding: 10px;
     max-width: 30%;
-    text-align: center;
-    margin: 5% 5%;
-    align-self: flex-start;
+
+    margin: 5% 5%; */
   }
 
   .navbar p:nth-of-type(2) {
-    background-color: #f3df85;
+    /* background-color: #f3df85;
     color: #612406;
     border-radius: 30px;
     padding: 10px;
-    max-width: 30%;
-    text-align: center;
-    align-self: flex-end;
+    max-width: 30%; */
   }
 
   .shopdiv {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     border-radius: 90px;
-    margin: 5%;
+
     background-color: #f3df85;
     width: 70%;
     height: 20%;
@@ -104,13 +113,12 @@ body {
     margin-left: auto;
     margin-right: auto;
     order: -10;
-
+    margin-top: 25px;
     max-width: 550px;
   }
 
   .navbar img {
     width: 50px;
-    display: flex;
   }
 
   .navbar h3 {
@@ -124,9 +132,8 @@ body {
     border-radius: 30px;
     padding: 10px;
     max-width: 30%;
-    text-align: center;
+
     margin: 5% 5%;
-    align-self: flex-start;
   }
 
   .navbar p:nth-of-type(4) {
@@ -135,8 +142,6 @@ body {
     border-radius: 30px;
     padding: 10px;
     max-width: 30%;
-    text-align: center;
-    align-self: flex-end;
   }
 }
 /* CARD */
@@ -149,10 +154,12 @@ h1 {
 .card {
   background-color: #fbf7e3;
   border-radius: 50px;
-  width: 200px;
+  align-items: center;
   display: flex;
-  flex-direction: column;
+  /*flex-direction: column;*/
   max-height: 220px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card img {
@@ -162,14 +169,14 @@ h1 {
 
 .card-body {
   display: flex;
-  flex-direction: column;
+  /*flex-direction: column;*/
   justify-content: space-between;
   padding: 10px;
 }
 
 .h3p {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column;*/
   gap: 5px;
 }
 
@@ -205,20 +212,12 @@ h1 {
     font-size: 3em;
     text-align: center;
   }
-  .container-cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 250px;
-  }
   .card {
     background-color: #fbf7e3;
-    border-radius: 50px;
-    width: 500px;
+    border-radius: 0 0 50px 50px;
+    max-width: 500px;
     display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
+    max-height: 520px;
   }
 
   .card img {
@@ -227,33 +226,32 @@ h1 {
   }
 
   .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     padding: 10px;
   }
 
   .h3p {
-    display: flex;
-    flex-direction: column;
     gap: 5px;
   }
-
+  /* .firstxt {
+  }
+  .secondtxt {
+  } */
   .card h3 {
-    color: #612406;
+    color: #07f413;
     font-size: 1em;
-    margin-left: 5%;
+    display: flex;
+    justify-content: flex-start;
   }
 
   .card p:nth-of-type(1) {
-    color: #683531;
+    color: #e41203;
     font-size: 0.8em;
-    margin-left: 5%;
+    margin: 0;
+    text-align: left;
   }
   .lastP {
-    align-self: self-end;
-    color: #683531;
-    margin-right: 10%;
+    text-align: end;
+    color: #02c8ff;
   }
 
   .btn {
@@ -266,6 +264,12 @@ h1 {
     align-self: center;
     margin-bottom: 1%;
   }
+}
+.news {
+  color: #612406;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 250px;
 }
 /*FLEXIBLE ARTICLE*/
 .container-article {
@@ -289,27 +293,61 @@ h1 {
   color: #682d10;
 }
 /*versione mobile*/
-.mobile-container-article {
+@media screen and (max-width: 575px) {
+  .container-article {
+    display: flex;
+    flex-direction: row;
+    background-color: #fbf7e3;
+
+    border-radius: 20px;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+  }
+  .container-article img {
+    width: 90%;
+    padding: 20px;
+    order: 1;
+  }
+  .text-article {
+    color: #682d10;
+    order: 0;
+  }
+  .text-article h3 {
+    color: #682d10;
+    font-weight: 700;
+    font-size: 1.5em;
+    padding: 0 5% 0 5%;
+  }
+  .text-article p {
+    color: #682d10;
+    padding: 0 5% 0 5%;
+  }
+}
+.container-card {
   display: flex;
-  flex-direction: column;
-  background-color: #fbf7e3;
-  margin: 50px;
-  border-radius: 20px;
-  max-width: 290px;
 }
-.mobile-container-article img {
-  width: 250px;
+
+.container-shopdiv {
+  display: flex;
+  width: 500px;
   padding: 20px;
 }
-.mobile-text-article {
-  color: #682d10;
+.p-card {
+  background-color: #f3df85;
+  color: #612406;
+  border-radius: 30px;
+  padding: 10px;
+  width: 200px;
+  height: 50px;
+  margin-right: 5px;
+  margin-left: 5px;
+  /* margin: 5% 5%; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-.mobile-text-article h3 {
-  color: #682d10;
-  font-weight: 600;
-  padding: 20px;
-}
-.mobile-text-article p {
-  color: #682d10;
-  padding: 20px;
+.header-card1 {
+  align-self: center;
 }
